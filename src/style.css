@@ -42,6 +42,7 @@ form {
     border-radius: 50px;
     padding: 14px 24px;
     font-size: 16px;
+    border: none;
 }
 .recipe  {
     font-size: 14px;
