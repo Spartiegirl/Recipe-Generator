@@ -1,6 +1,6 @@
 function displayRecipe(response) {
 
-  console.log("recipe generated");
+
 
 
 
@@ -27,9 +27,6 @@ let recipeElement = document.querySelector("#recipe");
 recipeElement.classList.remove("hidden");
 recipeElement.innerHTML = `Generating  a recipe using ${instructionsInput.value}`;
 
-console.log("Generating  recipe");
-console.log(`Prompt: ${prompt}`);
-console.log(`Context: ${context}`);
 
 axios.get(apiURL).then(displayRecipe);
   
