@@ -23,6 +23,10 @@ let prompt = `User instructions: Generate a recipe using ${instructionsInput.val
 let context = "You are a recipe generator expert and love to write recipes.  The recipes must be in imperial measurements. Your mission is to generate a recipe in basic HTML and do not include the word html. Make sure you follow user instructions";
 let apiURL= `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+let recipeElement = document.querySelector("#recipe");
+recipeElement.classList.remove("hidden");
+recipeElement.innerHTML = `Generating  a recipe using ${instructionsInput.value}`;
+
 console.log("Generating  recipe");
 console.log(`Prompt: ${prompt}`);
 console.log(`Context: ${context}`);
